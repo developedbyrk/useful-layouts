@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Layout : Flex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <p style="padding: 10px;"><a href="../index.html">Back to Navigation</a></p>
+    <div class="chat-wrapper">
+        <div class="user-details">
+            <h1>User Details</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores facilis facere dolor, veniam, corrupti
+            obcaecati similique impedit ipsa consectetur placeat excepturi quo iusto fuga temporibus pariatur incidunt
+            voluptatum illum. Vel?
+        </div>
+        <div class="chat-history">
+            <h2>Chat History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat sed facere voluptate doloremque.
+                Commodi, in? Mollitia voluptatibus quos id tenetur omnis veniam aut ea.</p>
+        </div>
+        <div class="chat-writing-area">
+            <div class="chat-header">
+                <h3>Chat Writing area</h3>
+                <div class="btn-group">
+                    <button onclick="insetSuggestedMessage()">Add</button>
+                    <button class="dm" onclick="deleteSuggestedMessage()">Delete</button>
+                </div>
+                <button onclick="toggleSuggestedMessage()">Toggle</button>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="">Label 1</label>
+                    <input type="text" placeholder="Write Your Info...">
+                </div>
+            </form>
+            <div class="suggested-message toggle-message">
+                <h3>Suggested Message</h3>
+                <div class="suggested-message-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--dynamic height can only fullfil the requirement if we can deduct on every single change whenever message update with new message in thread-->

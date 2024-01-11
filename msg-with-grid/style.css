@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin-block: 10px;
+    line-height: 1;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.35;
+    height: 100dvh;
+}
+
+.dm, .btn-group{
+    display: none;
+}
+
+body:has(.added-content) .dm{
+    display: inline;
+}
+
+body:has(.toggle-message) .btn-group{
+    display: flex;
+    gap: 20px;
+}
+
+.chat-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto minmax(75px, 1fr) auto;
+
+    padding: 20px;
+    width: 750px;
+    margin: auto;
+    border: 1px solid #999;
+    height: 100%;
+}
+
+.chat-wrapper>div:nth-child(odd) {
+    padding: 15px;
+    background-color: rgb(183, 183, 183);
+}
+
+.chat-history {
+    overflow-y: auto;
+}
+
+.chat-writing-area {
+    overflow-y: auto;
+}
+
+.chat-header{
+    display: flex;
+    gap: 25px;
+}
+
+.form-group{
+    display: grid;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.added-content{
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.suggested-message{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s;
+    background-color: #a94c04;
+}
+
+.suggested-message-inner {
+    overflow: hidden;
+    /*grid-row: 1 / span 2; try to add if found any speed issue with child*/
+}
+
+.suggested-message-content{
+    padding: 10px;
+}
+
+.toggle-message{
+    grid-template-rows: 1fr;
+}
+
+/* and the other way is to add dynamic height by .ts, in that case we can simply animate.*/
